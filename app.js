@@ -24,8 +24,14 @@ class UI {
         <div class="card mx-auto mt-5" style="width: 18rem;">
         <div class="card-body justify-content-center">
             <h5 class="card-title">${data.name}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Highs of ${data.main.temp_max}. Lows of ${data.main.temp_min}</h6>
-            <p class="card-text ">Weather conditions are described as: ${data.weather[0].description}</p>
+            <h6 class="card-subtitle mb-2 text-muted">   Current temperature of ${data.main.temp}
+            </h6>
+            <h6 class="card-subtitle mb-2 text-muted">Highs of ${data.main.temp_max}. Lows of ${data.main.temp_min}</h6> 
+            <h6 class="card-subtitle mb-2 text-muted">Humidity: ${data.main.humidity}%. </h6>
+            <h6 class="card-subtitle mb-2 text-muted">   Pressure: ${data.main.pressure}
+            </h6>
+            <p class="card-text ">Weather conditions are described as: ${data.weather[0].description}
+            </p>
             
         </div>
     </div>
