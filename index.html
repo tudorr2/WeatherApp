@@ -32,11 +32,26 @@
     </nav>
 
     <!-- input -->
-    <div class="input-group mb-3 mt-4 ">
-        <input type="text" class="form-control" placeholder="Enter a valid city name" aria-label="Enter a valid city name" aria-describedby="button-addon2">
-        <button class="btn btn-outline-secondary btn-outline-warning " type="button" id="button-addon2">View</button>
-      </div>
-      
+    <div class="input-group mb-3 mt-4">
+      <input
+        type="text"
+        class="form-control searchCity"
+        placeholder="Enter a valid city name"
+        aria-label="Enter a valid city name"
+        aria-describedby="button-addon2"
+      />
+      <button
+        class="btn btn-outline-secondary btn-outline-warning search submit"
+        type="submit"
+        id="button-addon2 "
+      >
+        View
+      </button>
+    </div>
+
+    <!-- content -->
+    <div id="content"></div>
+
     <script src="app.js"></script>
   </body>
 </html>
