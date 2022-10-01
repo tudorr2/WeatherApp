@@ -50,9 +50,17 @@ const input = document.querySelector(".searchCity");
 const button = document.querySelector(".submit");
 
 button.addEventListener("click", () => {
+    
   const inputValue = input.value;
 
   ft.getCurrent(inputValue).then((data) => {
     ui.populateUI(data);
   });
 });
+
+input.addEventListener("keypress" , (event) =>{
+    if(event.key === "Enter"){
+        event.preventDefault()
+        button.click();
+    }
+})
